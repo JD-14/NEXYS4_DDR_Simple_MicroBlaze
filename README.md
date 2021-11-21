@@ -31,7 +31,7 @@ This repo is a small tutorial on implementing the **MicroBlaze** processor on a 
  
  - FPGA Board Files:
    > By default Vivado comes with a limited amount of board files. Therefore, the Nexys 4 DDR FPGA board files have to be added manually to the board library of Vivado. 
-   >> 1. [Download the board files]()
+   >> 1. [Download the board files](/vivado-boards-master.zip)
    >> 2. Extract the folder
    >> 3. Navigate to the following folder: vivado-boards-master\new\board_files
    >> 4. Select and copy all the board files
@@ -41,4 +41,15 @@ This repo is a small tutorial on implementing the **MicroBlaze** processor on a 
 
 
 ## Vivado 2018.2
-
+   ### 1. Create new project:
+   > Open Vivado and you should see the same window as the image below. Under "Quick Start" click on "Create Project". A new window with the title "Create a New Vivado Project" will appear. Click the "Next" button.
+   >> ![img](/images/img1.png)
+   
+   > In the "Project Name" window, you can change the file name and location. Or you can leave it as default. Click the "Next" button.
+   >> ![img](/images/img2.png)
+   
+   > In the "Project Type" window, make sure that the "RTL Project" option is selected. Also, select the "Do not specify sources at this time" setting. Click the "Next" button.
+   >> ![img](/images/img3.png)
+   
+   > In the "Default Part" window, select the board section. This section is circled in the image below. **DO NOT** add the part from the Part section; this will create a problem later in the tutorial. 
+   >> ![img](/images/img4.png)

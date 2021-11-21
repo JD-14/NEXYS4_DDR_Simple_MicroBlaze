@@ -4,6 +4,9 @@ This repo is a small tutorial on implementing the **MicroBlaze** processor on a 
 ## Content:
   1. [Prerequisites]
   2. [initial setup]
+  3. Vivado 2018.2 (Hardware Design)
+  4. SDK 2018.2 (Create application using C)
+  5. PuTTY Terminal (Results)
 
 
 ## Prerequisites
@@ -27,5 +30,15 @@ This repo is a small tutorial on implementing the **MicroBlaze** processor on a 
     >> 2. reinstall the Vivado Design Suite in a separate folder from other Xilinx tools
  
  - FPGA Board Files:
-   > 
-  
+   > By default Vivado comes with a limited amount of board files. Therefore, the Nexys 4 DDR FPGA board files have to be added manually to the board library of Vivado. 
+   >> 1. [Download the board files]()
+   >> 2. Extract the folder
+   >> 3. Navigate to the following folder: vivado-boards-master\new\board_files
+   >> 4. Select and copy all the board files
+   >> 5. Locate and open the folder where you installed the Vivado Design Suite
+   >> 6. Navigate to the following folder: xilinx\SDK\2018.2\data\boards\board_files
+   >> 7. Paste the board files in the Vivado board folder
+
+
+## Vivado 2018.2
+

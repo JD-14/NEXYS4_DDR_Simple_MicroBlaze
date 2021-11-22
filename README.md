@@ -51,5 +51,20 @@ This repo is a small tutorial on implementing the **MicroBlaze** processor on a 
    > In the "Project Type" window, make sure that the "RTL Project" option is selected. Also, select the "Do not specify sources at this time" setting. Click the "Next" button.
    >> ![img](/images/img3.png)
    
-   > In the "Default Part" window, select the board section. This section is circled in the image below. **DO NOT** add the part from the Part section; this will create a problem later in the tutorial. 
+   > In the "Default Part" window, select the board section. This section is circled in the image below. **DO NOT** add the part from the Part section. If you do, it will create a problem later in the tutorial. Under the board section, type the model of the FPGA in the search bar. As shown in the image below, the "Nexys 4 DDR" board should appear as the only option. Select the board and click the "Next" button.
    >> ![img](/images/img4.png)
+   
+   > On the "New Project Summary" window, verify that the summary is the same as the image below. The only exception is the name of the project, which is arbitrary. However, the board information must be the same. If everything is correct, then click the "Finish" button to create the project
+   >> ![img](/images/img5.png)
+   
+   
+## Creating a Hardware Design Using The IP Integrator   
+   > After you create a new project, you will first see the Vivado IDE (Integrated Development Environment). As shown in the image below, the far left panel is called the "Flow Navigator."  To create the hardware design, we will use the "IP Integrator" option in the Flow Navigator.The IP Integrator contains multiple predefined hardware sources that are used to create new hardware designs. Under this option, click the "Create New Design."
+   >> ![img](/images/img6.png)
+   
+   > In the "Create Block Design" window, you can rename the design or leave it as default. Then, click the "OK" button to create the block design workspace.  
+   >> ![img](/images/img7.png)
+   
+   > In the  "Design" window, click on either of the blue-plus (add IP) symbols to add an IP block. The plus symbols are circled in the image below. Once you click it, a catalog of pre-built IP blocks from Xilinx IP repository will appear. Type "microblaze" on the search bar and double-click the first option. Now, the Xilinx Microblaze IP block should be visible on your design.
+   > ![img](/images/img8.png)
+   > ![img](/images/img9.png)
